@@ -1,0 +1,7 @@
+Put your professional photo in this folder and name it:
+profile.jpg
+
+The portfolio is already configured to load:
+assets/profile.jpg
+
+If your photo has another name/format, change the `photo` value in data.js.

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yogita Sahu — aspiring software engineer and MCA student specializing in Generative AI and web development.">
+  <title>Yogita Sahu | Software Engineer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brand-mark">Y</span>
+      <span id="brandName">Yogita <b>Sahu</b></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-resume" id="navResume" href="#resume">Resume ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Hello, I'm <span id="heroName">Yogita</span></p>
+        <h1><span id="heroTagline">Building my path as a</span> <em id="heroAccent">Software Engineer.</em></h1>
+        <p class="hero-text" id="heroDescription"></p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View My Work <span>↗</span></a>
+          <a class="btn btn-ghost" href="#contact">Let's Connect <span>↗</span></a>
+        </div>
+
+        <div class="hero-socials">
+          <a id="heroGithub" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a id="heroLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a id="heroEmail" href="#">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-one">
+        <div class="visual-card back-card">
+          <span>Currently learning</span>
+          <strong id="learningText">DSA + Java</strong>
+        </div>
+
+        <div class="visual-card main-card">
+          <div class="card-top">
+            <span class="mini-logo">YS</span>
+            <span class="status"><i></i> Available for opportunities</span>
+          </div>
+
+          <div class="profile-placeholder">
+            <img id="profilePhoto" src="" alt="Yogita Sahu profile photo">
+            <div class="profile-initial" id="profileInitial">Y</div>
+            <p id="profileHint">Profile photo<br><small>Add your photo in assets/profile.jpg</small></p>
+          </div>
+
+          <div class="card-bottom">
+            <span id="profileRole">MCA • Generative AI</span>
+            <span id="profileLocation">Chennai, India</span>
+          </div>
+        </div>
+
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">✦</div>
+      </div>
+    </section>
+
+    <div class="marquee">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> About Me</p>
+        <h2><span id="aboutTitle">Learning, building,</span><br><em id="aboutAccent">growing.</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-intro reveal" id="aboutIntro"></div>
+        <div class="about-panel reveal delay-one">
+          <div class="panel-line"><span>01</span><strong>What I build</strong><p>Responsive web experiences and practical student projects.</p></div>
+          <div class="panel-line"><span>02</span><strong>What I'm learning</strong><p>Java, DSA, frontend fundamentals and Generative AI.</p></div>
+          <div class="panel-line"><span>03</span><strong>What I'm looking for</strong><p>Internship and software engineering opportunities.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow"><span></span> My Skills</p>
+        <h2>Tools I use to<br><em>create & learn.</em></h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> Selected Work</p>
+        <h2>Projects that turn<br><em>learning into practice.</em></h2>
+      </div>
+      <div id="projectsContainer"></div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow"><span></span> Education</p>
+        <h2>The journey<br><em>so far.</em></h2>
+      </div>
+      <div class="timeline" id="educationTimeline"></div>
+    </section>
+
+    <section class="section certificates" id="certificates">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> Certifications</p>
+        <h2>Learning beyond<br><em>the classroom.</em></h2>
+      </div>
+      <div id="certificatesContainer"></div>
+    </section>
+
+    <section class="section resume-cta reveal" id="resume">
+      <div>
+        <p class="eyebrow"><span></span> My Resume</p>
+        <h2>Let's build something<br><em>meaningful.</em></h2>
+      </div>
+      <a class="btn btn-primary" id="mainResume" href="assets/resume.pdf">Download Resume <span>↓</span></a>
+    </section>
+
+    <section class="section resume-library" id="resumeLibrary">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> Resume Library</p>
+        <h2>My resumes,<br><em>one place.</em></h2>
+      </div>
+      <div class="resume-grid" id="resumesContainer"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow"><span></span> Get In Touch</p>
+        <h2>Let's start a<br><em>conversation.</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-details reveal">
+          <p>I'm open to internship opportunities, learning collaborations and conversations around software development.</p>
+          <a id="contactEmail" href="#" class="contact-link"><span id="contactEmailText"></span> <span>↗</span></a>
+          <div class="contact-socials"><a id="contactGithub" href="#" target="_blank" rel="noopener">GitHub</a><a id="contactLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
+        </div>
+
+        <form class="contact-form reveal delay-one" id="contactForm">
+          <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell me a little about your message..." required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Message <span>↗</span></button>
+          <p class="form-note" id="formNote">Frontend demo form — connect a backend/form service later.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><span>Y</span><strong id="footerName">Yogita Sahu</strong></div>
+    <p>Designed & built with HTML, CSS & JavaScript.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light mode">☼</button>
+  <button class="top-button" id="topButton" aria-label="Back to top">↑</button>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
