@@ -29,7 +29,7 @@ const portfolioData = {
     location: "Chennai, India",
     photo: "assets/profile.jpg",
     email: "yogitasahu2805@gmail.com",
-    github: "#", // Paste your GitHub profile URL here.
+    github: "https://github.com/yogita-2804", // Paste your GitHub profile URL here.
     linkedin: "https://www.linkedin.com/in/yogita-sahu-352334422",
     resume: "assets/resume.pdf"
   },
